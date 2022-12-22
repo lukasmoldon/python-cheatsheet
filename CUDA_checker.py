@@ -1,7 +1,10 @@
 import torch
-
+import sys
 
 def main():
+    
+    print("Python", sys.version)
+    print()
     print("GPU available with CUDA:", torch.cuda.is_available())
     if not torch.cuda.is_available():
         return
